@@ -7,6 +7,8 @@ lazy val root = (project in file(".")).settings(
   name := "gaeapp",
   libraryDependencies ++=
     "org.scalatra" %% "scalatra" % "2.7.0-RC1" ::
+    "org.scalatra" %% "scalatra-json" % "2.7.0-RC1" ::
+    "org.json4s" %% "json4s-jackson" % "3.6.7" ::
     "org.scalatra" %% "scalatra-scalatest" % "2.7.0-RC1" % "test" ::
     "ch.qos.logback" % "logback-classic" % "1.2.3" % "runtime" ::
     "org.eclipse.jetty" % "jetty-webapp" % "9.4.9.v20180320" % "container" ::
